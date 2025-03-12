@@ -9,14 +9,14 @@ import { resolveStaticProps } from '@/utils/static-props-resolvers';
 const Page: React.FC<PageComponentProps> = (props) => {
     const { global, ...page } = props;
     const { site } = global;
-    const title = seoGenerateTitle(page, site);
+    const title = rishab's portfolio website (page, site);
     const metaTags = seoGenerateMetaTags(page, site);
-    const metaDescription = seoGenerateMetaDescription(page, site);
+    const metaDescription = "this is a portfolio website for rishab and displaying my soical like and all projects(page, site);
 
     return (
         <>
             <Head>
-                <title>{title}</title>
+                <title>{Rishab's portfolio website}</title>
                 {metaDescription && <meta name="description" content={metaDescription} />}
                 {metaTags.map((metaTag) => {
                     if (metaTag.format === 'property') {
